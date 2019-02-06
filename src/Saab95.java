@@ -181,7 +181,7 @@ public class Saab95 extends AbstractCar implements Movable {
     // TODO fix this method according to lab pm
     public void gas(double amount) {
         boolean isIncrementSpeed = getCurrentSpeed() + speedFactor() * amount > getCurrentSpeed();
-        boolean isInCurrentSpeedInterval = getCurrentSpeed() + speedFactor() * amount >= 0 && getCurrentSpeed() + speedFactor() * amount <= enginePower;
+        boolean isInCurrentSpeedInterval = getCurrentSpeed() + speedFactor() * amount >= 0 && getCurrentSpeed() + speedFactor() * amount <= getEnginePower();
         if (amount >= 0 && amount <= 1 && isIncrementSpeed && isInCurrentSpeedInterval) {
             incrementSpeed(amount);
         }
@@ -194,7 +194,7 @@ public class Saab95 extends AbstractCar implements Movable {
     // TODO fix this method according to lab pm
     public void brake(double amount) {
         boolean isDecrementSpeed = getCurrentSpeed() + speedFactor() * amount < getCurrentSpeed();
-        boolean isInCurrentSpeedInterval = getCurrentSpeed() + speedFactor() * amount >= 0 && getCurrentSpeed() + speedFactor() * amount <= enginePower;
+        boolean isInCurrentSpeedInterval = getCurrentSpeed() + speedFactor() * amount >= 0 && getCurrentSpeed() + speedFactor() * amount <= getEnginePower();
         if (amount >= 0 && amount <= 1 && isDecrementSpeed && isInCurrentSpeedInterval) {
             decrementSpeed(amount);
         }

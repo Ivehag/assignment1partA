@@ -156,5 +156,19 @@ public class TestCars {
         assertEquals(0, Saab.getCurrentSpeed(), 0.1);
     }
 
+    public Scania scania = new Scania(2, 300, 1, Color.black, "Scania", 0, 0, 0);
+
+    @Test
+    public void testGradientWithSpeed() {
+        scania.tipTruckBed(20);
+        assertEquals(0, scania.getCurrentTruckBedGradient(), 0.1);
+    }
+
+    @Test
+    public void testGradientWithoutSpeed() {
+        scania.setCurrentSpeed(0);
+        scania.tipTruckBed(20);
+        assertEquals(20, scania.getCurrentTruckBedGradient(), 0.1);
+    }
 }
 
