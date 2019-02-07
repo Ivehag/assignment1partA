@@ -54,6 +54,7 @@ public class CarTransporter<T extends AbstractCar> extends AbstractCar {
         boolean carCloseToTransporter = Math.abs(getX() - car.getX()) <= delta && Math.abs(getY() - car.getY()) <= delta;
 
         if (carCloseToTransporter && getRampStatus() == Ramp.DOWN && car.getClass() != CarTransporter.class) {
+            car.stopEngine();
             car.setY(getY());
             car.setX(getX());
             cars.push(car);

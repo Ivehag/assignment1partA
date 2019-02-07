@@ -196,6 +196,9 @@ public class TestCars {
 
     @Test
     public void testLoadCars() {
+        transporter.stopEngine();
+        transporter.setRampDown();
+        volvo.stopEngine();
         transporter.loadCar(volvo);
         assertTrue(transporter.getCarAtIndex(0) == volvo);
     }
