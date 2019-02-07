@@ -8,8 +8,22 @@ import java.awt.*;
 import java.util.LinkedList;
 
 public class TestCars {
+    /***
+     * Test for Volvo240
+     */
+    public Volvo240 volvo;
+    public Saab95 Saab;
+    public Scania scania;
+    public CarTransporter transporter;
 
-    public Volvo240 volvo = new Volvo240(4, 100, 0, Color.black, "Volvo240", 0, 0);
+
+    @Before
+    public void init() {
+        volvo = new Volvo240(4, 100, 0, Color.black, "Volvo240", 0, 0);
+        scania = new Scania(2, 300, 1, Color.black, "Scania", 0, 0, 0);
+        transporter = new CarTransporter(2, 300, 1, Color.black, "Transporter", 0, 0);
+        Saab = new Saab95(2, 125, 0, Color.red, "Saab95", 0, 0, false);
+    }
 
     @Test
     public void testGetNumberOfDoorsForVolvo240() {
@@ -108,7 +122,9 @@ public class TestCars {
         assertEquals(0, volvo.getCurrentSpeed(), 0.1);
     }
 
-    public Saab95 Saab = new Saab95(2, 125, 0, Color.red, "Saab95", 0, 0, false);
+    /***
+     * Tests for Saab95
+     */
 
 
     @Test
@@ -156,7 +172,10 @@ public class TestCars {
         assertEquals(0, Saab.getCurrentSpeed(), 0.1);
     }
 
-    public Scania scania = new Scania(2, 300, 1, Color.black, "Scania", 0, 0, 0);
+    /***
+     * Tests for Scania
+     */
+
 
     @Test
     public void testGradientWithSpeed() {
@@ -169,6 +188,16 @@ public class TestCars {
         scania.setCurrentSpeed(0);
         scania.tipTruckBed(20);
         assertEquals(20, scania.getCurrentTruckBedGradient(), 0.1);
+    }
+
+    /***
+     * Tests for CarTransporter
+     */
+
+    @Test
+    public void testLoadCars() {
+        transporter.loadCar(volvo);
+        assertTrue(transporter.getCarAtIndex(0) == volvo);
     }
 }
 

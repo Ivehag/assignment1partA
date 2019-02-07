@@ -239,4 +239,56 @@ public abstract class AbstractCar implements Movable {
         currentSpeed = 0;
     }
 
+    public double speedFactor() {
+
+        return getEnginePower() * 0.01;
+    }
+
+    /***
+     * Increases the total speed of the Volvo240
+     * @param amount amount of speed increment
+     */
+
+
+    public void incrementSpeed(double amount) {
+
+        setCurrentSpeed(Math.min(getCurrentSpeed() + speedFactor() * amount, getEnginePower()));
+
+    }
+
+    /***
+     * Decrement of speed of the Volvo240
+     * @param amount amount of speed decrement
+     */
+    public void decrementSpeed(double amount) {
+
+        setCurrentSpeed(Math.max(getCurrentSpeed() - speedFactor() * amount, 0));
+
+    }
+    /***
+     * Gives gas to the Volvo240
+     * @param amount amount of gas (speed increment) to the Volvo240
+     */
+    // TODO fix this method according to lab pm
+    public void gas(double amount) {
+        boolean isIncrementSpeed = Math.min(getCurrentSpeed() + speedFactor() * amount, getEnginePower()) > getCurrentSpeed();
+        boolean isInCurrentSpeedInterval = Math.min(getCurrentSpeed() + speedFactor() * amount, getEnginePower()) >= 0 && Math.min(getCurrentSpeed() + speedFactor() * amount, getEnginePower()) <= getEnginePower();
+        if (amount >= 0 && amount <= 1 && isIncrementSpeed && isInCurrentSpeedInterval) {
+            incrementSpeed(amount);
+        }
+    }
+
+    /***
+     * Uses breaks of the Volvo240
+     * @param amount amount of break (speed decrement) of the Volvo240
+     */
+
+    // TODO fix this method according to lab pm
+    public void brake(double amount) {
+        boolean isDecrementSpeed = Math.max(getCurrentSpeed() - speedFactor() * amount, 0) < getCurrentSpeed();
+        boolean isInCurrentSpeedInterval = Math.max(getCurrentSpeed() - speedFactor() * amount, 0) >= 0 && Math.max(getCurrentSpeed() - speedFactor() * amount, 0) <= getEnginePower();
+        if (amount >= 0 && amount <= 1 && isDecrementSpeed && isInCurrentSpeedInterval) {
+            decrementSpeed(amount);
+        }
+    }
 }
