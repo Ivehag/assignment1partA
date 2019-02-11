@@ -4,7 +4,6 @@ public abstract class AbstractCar extends AbstractPositionable implements Movabl
     private int nrDoors; // Number of doors on the car
     private double enginePower; // Engine power of the car
     private double currentSpeed; // The current speed of the car
-    private Color color; // Color of the car
     private String modelName; // The car model name
     protected Direction direction;
 
@@ -135,21 +134,6 @@ public abstract class AbstractCar extends AbstractPositionable implements Movabl
         this.currentSpeed = speed;
     }
 
-    /***
-     * Gets the color of the car
-     * @return A color
-     */
-    public Color getColor() {
-        return color;
-    }
-
-    /***
-     * Sets the color of the car
-     * @param clr Color of the car
-     */
-    public void setColor(Color clr) {
-        this.color = clr;
-    }
 
     /***
      * Sets current speed to 0.1 when starting the engine

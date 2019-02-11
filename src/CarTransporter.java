@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Stack;
 import java.util.spi.AbstractResourceBundleProvider;
 
-public class CarTransporter<T extends AbstractCar> extends AbstractCar {
+public class CarTransporter<T extends AbstractCar> extends AbstractTransporter {
     private Ramp ramp;
     private Stack<T> cars = new Stack<>();
     private double delta = 2;
@@ -50,10 +50,10 @@ public class CarTransporter<T extends AbstractCar> extends AbstractCar {
     }
 
 
-    public void loadCar(T car) {
+    public void loadCar(T car ) {
         boolean carCloseToTransporter = Math.abs(getX() - car.getX()) <= delta && Math.abs(getY() - car.getY()) <= delta;
 
-        if (carCloseToTransporter && getRampStatus() == Ramp.DOWN && car.getClass() != CarTransporter.class) {
+        if (carCloseToTransporter && getRampStatus() == Ramp.DOWN /*&& car.getClass() != CarTransporter*/) {
             car.stopEngine();
             car.setY(getY());
             car.setX(getX());

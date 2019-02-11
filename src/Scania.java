@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Scania extends AbstractCar {
+public class Scania extends AbstractTruck {
     private double currentTruckBedGradient;
 
     public Scania(int nrDoors, double enginePower, double currentSpeed, Color color, String modelName, double x, double y, double currentTruckBedGradient) {
