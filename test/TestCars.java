@@ -135,12 +135,12 @@ public class TestCars {
 
     @Test
     public void getXCoordinatesForSaab95() {
-        assertTrue(Saab.x == 0);
+        assertTrue(Saab.getX() == 0);
     }
 
     @Test
     public void getYCoordinatesForSaab95() {
-        assertTrue(Saab.y == 0);
+        assertTrue(Saab.getY() == 0);
     }
 
 
@@ -201,6 +201,17 @@ public class TestCars {
         volvo.stopEngine();
         transporter.loadCar(volvo);
         assertTrue(transporter.getCarAtIndex(0) == volvo);
+    }
+
+    @Test
+    public void testLoadMultipleCars() {
+        transporter.stopEngine();
+        transporter.setRampDown();
+        volvo.stopEngine();
+        transporter.loadCar(volvo);
+        transporter.loadCar(Saab);
+        transporter.loadCar(scania);
+        assertTrue(transporter.getCarAtIndex(0) == volvo && transporter.getCarAtIndex(1) == Saab && transporter.getCarAtIndex(2) == scania);
     }
 }
 

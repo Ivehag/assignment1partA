@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0169529-485f-491c-8b15-d91ad3711017" name="Default Changelist" comment="" />
+    <list default="true" id="e0169529-485f-491c-8b15-d91ad3711017" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AbstractPositionable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/AbstractCar$Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/AbstractCar$Direction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/AbstractCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/AbstractCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/lab1/TestCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab1/TestCars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AbstractCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestCars.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestCars.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,16 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scania.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="663">
               <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-              <folding>
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
-                <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#1498#1499#0" expanded="true" />
-                <element signature="e#1544#1545#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -64,59 +66,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Saab95.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="561">
               <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/TestCars.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2719">
-              <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+            <state relative-caret-position="2227">
+              <caret line="142" column="30" selection-start-line="142" selection-start-column="30" selection-end-line="142" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#630#631#0" expanded="true" />
-                <element signature="e#689#690#0" expanded="true" />
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#956#957#0" expanded="true" />
-                <element signature="e#1015#1016#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
-                <element signature="e#3102#3103#0" expanded="true" />
-                <element signature="e#3160#3161#0" expanded="true" />
-                <element signature="e#3217#3218#0" expanded="true" />
-                <element signature="e#3256#3257#0" expanded="true" />
-                <element signature="e#3312#3313#0" expanded="true" />
-                <element signature="e#3351#3352#0" expanded="true" />
-                <element signature="e#3413#3414#0" expanded="true" />
-                <element signature="e#3463#3464#0" expanded="true" />
-                <element signature="e#3632#3633#0" expanded="true" />
-                <element signature="e#3688#3689#0" expanded="true" />
-                <element signature="e#3748#3749#0" expanded="true" />
-                <element signature="e#3803#3804#0" expanded="true" />
+                <element signature="e#3531#3532#0" expanded="true" />
+                <element signature="e#3575#3576#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AbstractPositionable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CarTransporter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="65" column="52" lean-forward="true" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
+            <state relative-caret-position="17">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1092#1093#0" expanded="true" />
-                <element signature="e#1119#1120#0" expanded="true" />
-                <element signature="e#1206#1207#0" expanded="true" />
-                <element signature="e#1252#1253#0" expanded="true" />
-                <element signature="e#1714#1715#0" expanded="true" />
-                <element signature="e#1740#1741#0" expanded="true" />
-                <element signature="e#2089#2090#0" expanded="true" />
-                <element signature="e#2129#2130#0" expanded="true" />
+                <element signature="e#1977#1978#0" expanded="true" />
+                <element signature="e#2017#2018#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,8 +112,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AbstractCar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="292" column="5" selection-start-line="292" selection-start-column="5" selection-end-line="292" selection-end-column="5" />
+            <state relative-caret-position="442">
+              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AbstractVehicle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -143,6 +139,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>this.</find>
+      <find>stop</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,14 +151,16 @@
         <option value="$PROJECT_DIR$/src/Car.java" />
         <option value="$PROJECT_DIR$/src/text.txt" />
         <option value="$PROJECT_DIR$/src/Movable.java" />
-        <option value="$PROJECT_DIR$/src/AbstractPositionable.java" />
         <option value="$PROJECT_DIR$/src/carTransporter.java" />
         <option value="$PROJECT_DIR$/src/Scania.java" />
-        <option value="$PROJECT_DIR$/src/AbstractCar.java" />
         <option value="$PROJECT_DIR$/src/Saab95.java" />
         <option value="$PROJECT_DIR$/src/Volvo240.java" />
-        <option value="$PROJECT_DIR$/test/TestCars.java" />
         <option value="$PROJECT_DIR$/src/CarTransporter.java" />
+        <option value="$PROJECT_DIR$/src/Positionable.java" />
+        <option value="$PROJECT_DIR$/test/TestCars.java" />
+        <option value="$PROJECT_DIR$/src/AbstractVehicle.java" />
+        <option value="$PROJECT_DIR$/src/AbstractPositionable.java" />
+        <option value="$PROJECT_DIR$/src/AbstractCar.java" />
       </list>
     </option>
   </component>
@@ -176,8 +175,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,11 +200,12 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549529162197" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549633426497" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -238,9 +238,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCars.testLoadMultipleCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCars" />
+      <option name="METHOD_NAME" value="testLoadMultipleCars" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in lab1" />
+        <item itemvalue="JUnit.TestCars.testLoadMultipleCars" />
         <item itemvalue="JUnit.TestCars.testGetCurrentSpeedVolvo240" />
       </list>
     </recent_temporary>
@@ -259,34 +270,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_lab1 - 2019.02.06 at 15h 25m 57s.xml">
-      <configuration name="All in lab1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_lab1 - 2019.02.07 at 09h 05m 27s.xml">
-      <configuration name="All in lab1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_lab1 - 2019.02.07 at 09h 15m 35s.xml">
-      <configuration name="All in lab1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_lab1 - 2019.02.07 at 09h 16m 18s.xml">
-      <configuration name="All in lab1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_lab1 - 2019.02.07 at 09h 17m 01s.xml">
-      <configuration name="All in lab1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_lab1 - 2019.02.07 at 09h 19m 20s.xml">
-      <configuration name="All in lab1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_lab1 - 2019.02.07 at 09h 20m 05s.xml">
-      <configuration name="All in lab1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_lab1 - 2019.02.07 at 09h 32m 20s.xml">
-      <configuration name="All in lab1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_lab1 - 2019.02.07 at 09h 32m 46s.xml">
       <configuration name="All in lab1" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_lab1 - 2019.02.07 at 09h 32m 51s.xml">
+      <configuration name="All in lab1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_lab1 - 2019.02.07 at 09h 44m 21s.xml">
+      <configuration name="All in lab1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_lab1 - 2019.02.07 at 09h 45m 47s.xml">
+      <configuration name="All in lab1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_lab1 - 2019.02.07 at 09h 46m 06s.xml">
+      <configuration name="All in lab1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_lab1 - 2019.02.08 at 13h 50m 58s.xml">
+      <configuration name="All in lab1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCars_testLoadMultipleCars - 2019.02.08 at 13h 52m 11s.xml">
+      <configuration name="TestCars.testLoadMultipleCars" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_lab1 - 2019.02.08 at 13h 57m 05s.xml">
+      <configuration name="All in lab1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_lab1 - 2019.02.08 at 13h 57m 37s.xml">
+      <configuration name="All in lab1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_lab1 - 2019.02.08 at 13h 58m 44s.xml">
       <configuration name="All in lab1" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -299,7 +310,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.26644295" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.16308725" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -307,7 +318,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -357,7 +368,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AbstractPositionable.java" />
     <entry file="file://$USER_HOME$/Documents/GitHub/DIT953-lab1/Saab95.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -388,6 +398,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scania.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Volvo240.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -395,79 +412,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestCars.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2227">
+          <caret line="142" column="30" selection-start-line="142" selection-start-column="30" selection-end-line="142" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3531#3532#0" expanded="true" />
+            <element signature="e#3575#3576#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Saab95.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="561">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractPositionable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractVehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AbstractCar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="292" column="5" selection-start-line="292" selection-start-column="5" selection-end-line="292" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scania.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-          <folding>
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="442">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CarTransporter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="65" column="52" lean-forward="true" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
+        <state relative-caret-position="17">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-            <element signature="e#1119#1120#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
-            <element signature="e#1714#1715#0" expanded="true" />
-            <element signature="e#1740#1741#0" expanded="true" />
-            <element signature="e#2089#2090#0" expanded="true" />
-            <element signature="e#2129#2130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestCars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2719">
-          <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#3102#3103#0" expanded="true" />
-            <element signature="e#3160#3161#0" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-            <element signature="e#3312#3313#0" expanded="true" />
-            <element signature="e#3351#3352#0" expanded="true" />
-            <element signature="e#3413#3414#0" expanded="true" />
-            <element signature="e#3463#3464#0" expanded="true" />
-            <element signature="e#3632#3633#0" expanded="true" />
-            <element signature="e#3688#3689#0" expanded="true" />
-            <element signature="e#3748#3749#0" expanded="true" />
-            <element signature="e#3803#3804#0" expanded="true" />
+            <element signature="e#1977#1978#0" expanded="true" />
+            <element signature="e#2017#2018#0" expanded="true" />
           </folding>
         </state>
       </provider>
