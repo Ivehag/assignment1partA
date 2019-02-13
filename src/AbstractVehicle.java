@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class AbstractVehicle extends AbstractPositionable implements Movable {
+public abstract class AbstractVehicle extends AbstractPositionable implements Movable {
 
     private int nrDoors; // Number of doors on the car
     private double enginePower; // Engine power of the car

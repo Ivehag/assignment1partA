@@ -15,7 +15,8 @@ public class TestCars {
     public Saab95 Saab;
     public Scania scania;
     public CarTransporter transporter;
-
+    public Garage garage;
+    public Garage<Volvo240> volvoGarage;
 
     @Before
     public void init() {
@@ -23,6 +24,13 @@ public class TestCars {
         scania = new Scania(2, 300, 1, Color.black, "Scania", 0, 0, 0);
         transporter = new CarTransporter(2, 300, 1, Color.black, "Transporter", 0, 0);
         Saab = new Saab95(2, 125, 0, Color.red, "Saab95", 0, 0, false);
+        garage = new Garage(0, 0, Color.black);
+        volvoGarage = new Garage<>(5,5,Color.CYAN) {
+            @Override
+            public Color getColor() {
+                return super.getColor();
+            }
+        };
     }
 
     @Test
@@ -210,8 +218,34 @@ public class TestCars {
         volvo.stopEngine();
         transporter.loadCar(volvo);
         transporter.loadCar(Saab);
-        transporter.loadCar(scania);
-        assertTrue(transporter.getCarAtIndex(0) == volvo && transporter.getCarAtIndex(1) == Saab && transporter.getCarAtIndex(2) == scania);
+        assertTrue(transporter.getCarAtIndex(0) == volvo && transporter.getCarAtIndex(1) == Saab);
+    }
+
+    /***
+     * Garage tests
+     */
+
+    @Test
+    public void testLoadingGarage() {
+        volvo.stopEngine();
+        volvo.setX(garage.getX() + 1);
+        volvo.setY(garage.getY() + 1);
+        Saab.stopEngine();
+        Saab.setX(garage.getX() + 1);
+        Saab.setY(garage.getY() + 1);
+        garage.loadCar(volvo);
+        garage.loadCar(Saab);
+        assertTrue(garage.getCarAtIndex(0) == volvo && garage.getCarAtIndex(1) == Saab);
+    }
+
+
+   @Test
+    public void testLoadingSpecializedGarage() {
+        volvo.stopEngine();
+        volvo.setX(volvoGarage.getX() + 1);
+        volvo.setY(volvoGarage.getY() + 1);
+        volvoGarage.loadCar(volvo);
+
+        assertTrue(volvoGarage.getCarAtIndex(0) == volvo);
     }
 }
-

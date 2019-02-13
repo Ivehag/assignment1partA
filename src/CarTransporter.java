@@ -4,53 +4,30 @@ import java.util.Stack;
 import java.util.spi.AbstractResourceBundleProvider;
 
 public class CarTransporter<T extends AbstractCar> extends AbstractTransporter {
-    private Ramp ramp;
+
     private Stack<T> cars = new Stack<>();
     private double delta = 2;
 
-    private enum Ramp {UP, DOWN}
-
-    ;
 
     public CarTransporter(int nrDoors, double enginePower, double currentSpeed, Color color, String modelName, double x, double y) {
         super(nrDoors, enginePower, currentSpeed, color, modelName, x, y);
 
-    }
-
-
-    public void setRampUp() {
-        if (getCurrentSpeed() == 0) {
-            ramp = Ramp.UP;
-        }
-    }
-
-    /***
-     * we want to throw a exception if getCurrentSpeed()!=0
+    }/***
+     * Unload the car of class T on top of the Stack
      */
-    public void setRampDown() {
-        if (getCurrentSpeed() == 0) {
-            ramp = Ramp.DOWN;
-        }
+    public void unloadCar() {
+        cars.pop();
     }
-
     /***
-     * get method
+     * Get method
+     * @param i
      * @return
      */
-    public Ramp getRampStatus() {
-        return ramp;
+    public T getCarAtIndex(int i) {
+        return cars.elementAt(i);
     }
 
-    /***
-     * Speed factor
-     * @return
-     */
-    public double speedFactor() {
-        return getEnginePower() * 0.01;
-    }
-
-
-    public void loadCar(T car ) {
+    public void loadCar(T car) {
         boolean carCloseToTransporter = Math.abs(getX() - car.getX()) <= delta && Math.abs(getY() - car.getY()) <= delta;
 
         if (carCloseToTransporter && getRampStatus() == Ramp.DOWN /*&& car.getClass() != CarTransporter*/) {
@@ -61,14 +38,6 @@ public class CarTransporter<T extends AbstractCar> extends AbstractTransporter {
         }
 
     }
-
-    /***
-     * Unload the car of class T on top of the Stack
-     */
-    public void unloadCar() {
-        cars.pop();
-    }
-
     /***
      * Set method
      */
@@ -81,12 +50,12 @@ public class CarTransporter<T extends AbstractCar> extends AbstractTransporter {
     }
 
     /***
-     * Get method
-     * @param i
+     * Speed factor
      * @return
      */
-    public T getCarAtIndex(int i) {
-        return cars.elementAt(i);
+    public double speedFactor() {
+        return getEnginePower() * 0.01;
     }
+
 
 }
