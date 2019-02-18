@@ -36,13 +36,13 @@ public abstract class AbstractCar extends AbstractPositionable implements Movabl
     public void move() {
         if (direction == Direction.EAST) {
             setX(getX() + currentSpeed);
-        } else if (direction == Direction.NORTH) {
+        } else if (direction == Direction.SOUTH) {
             setY(getY() + currentSpeed);
             //   this.y += currentSpeed;
         } else if (direction == Direction.WEST) {
             setX(getX() - currentSpeed);
             // this.x -= currentSpeed;
-        } else if (direction == Direction.SOUTH) {
+        } else if (direction == Direction.NORTH) {
             setY(getY() - currentSpeed);
             //this.y -= currentSpeed;
         }

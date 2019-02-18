@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Scania extends AbstractTruck {
+public class Scania extends AbstractCar {
     private double currentTruckBedGradient;
 
     public Scania(int nrDoors, double enginePower, double currentSpeed, Color color, String modelName, double x, double y, double currentTruckBedGradient) {
@@ -53,8 +53,6 @@ public class Scania extends AbstractTruck {
     public double speedFactor() {
         return getEnginePower() * 0.01;
     }
-
-
 
 
 }
